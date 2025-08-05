@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activity_Lifecycle"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/activityLifecycleText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/onCreatebutton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="on Create"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/activityLifecycleText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/onStartbutton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="on Start"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/onCreatebutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/onPausebutton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="on Pause"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/onStartbutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/onStopbutton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="on Stop"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/onPausebutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/onRestartbutton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="on Restart"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/onStopbutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/onDestroybutton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="on Destroy"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/onRestartbutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
